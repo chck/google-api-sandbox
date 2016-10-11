@@ -17,6 +17,7 @@ calendar_id = 'ja.japanese#holiday@group.v.calendar.google.com'
 dtfrom = date(year=2016, month=1, day=1).isoformat() + "T00:00:00.000000Z"
 dtto = date(year=2016, month=12, day=31).isoformat() + "T00:00:00.000000Z"
 
+# ここのリクエストをいじってisHoliday(date) 的なメソッド作りたい
 events_results = service.events().list(
         calendarId=calendar_id,
         timeMin=dtfrom,
