@@ -6,7 +6,7 @@ from oauth2client.service_account import ServiceAccountCredentials
 from apiclient.discovery import build
 # https://developers.google.com/api-client-library/python/start/get_started
 
-json_file = 'secrets/YOUR_GOOGLE__PROJECT.json'
+json_file = 'secrets/YOUR_GOOGLE_PROJECT.json'
 scopes = ['https://www.googleapis.com/auth/calendar.readonly']
 credentials = ServiceAccountCredentials.from_json_keyfile_name(json_file, scopes=scopes)
 http_auth = credentials.authorize(Http())
